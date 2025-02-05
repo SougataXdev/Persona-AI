@@ -31,21 +31,22 @@ const Hero = () => {
               <ChevronRight className="ml-2 w-4 h-4 text-white" />
             </AnimatedGradientText>
           </button>
-          <div className="flex flex-col items-center mt-14 max-w-3xl w-11/12 md:w-full">
+          <div className="flex flex-col items-center mt-14 max-w-4xl w-11/12 md:w-full">
             <TextGenerateEffect words={heroTitle} title={true} />
 
-            <p className="text-base md:text-lg text-background/70 mt-6 text-center">
-              Let your digital twin engage with with your audience while you
-              focus on what matters most..
+            <p className="text-base tracking-tight font-poppins md:text-lg lg:text- text-background/70 mt-6 text-center">
+              Let your digital twin handle interactions effortlessly, so you can
+              stay focused on
+              <br /> what truly matters.
             </p>
 
-            <div className=" md:flex relative items-center justify-center mt-8 md:mt-12 w-full">
+            <div className=" md:flex relative items-center justify-center mt-8 md:mt-14 w-full">
               <SignUpButtonC />
             </div>
           </div>
         </div>
       </Container>
-      <div className=" opacity-20 absolute bottom-0 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-3/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
+      <div className=" opacity-20 absolute bottom-0 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-2/4 -translate-y-1/2 inset-0 blur-[10rem]"></div>
     </Wrapper>
   );
 };
