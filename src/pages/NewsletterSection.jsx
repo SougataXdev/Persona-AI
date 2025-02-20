@@ -11,7 +11,7 @@ import { Input } from "../components/ui/Input";
 
 export const NewsletterSection = () => {
   return (
-    <section id="newsletter" className="w-2/3">
+    <section id="newsletter" className="w-full sm:w-2/3 ">
       <Wrapper className="flex flex-col items-center justify-center relative">
         <Container>
           <LampContainer>
