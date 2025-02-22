@@ -5,7 +5,7 @@ import { ArrowUpRight } from "lucide-react"; // Make sure lucide-react is instal
 
 export const SlideNavTabs = () => {
   return (
-    <div className="fixed right-0 left-0 top-0 z-20 mx-auto text-white bg-transparent hidden md:block"> {/* Hide on mobile */}
+    <div className="fixed right-0 left-0 top-0 z-40 mx-auto text-white bg-transparent hidden md:block"> {/* Hide on mobile */}
       <SlideTabs />
     </div>
   );
@@ -71,7 +71,7 @@ const Tab = ({ children, setPosition }) => {
           opacity: 1,
         });
       }}
-      className="block relative z-10 py-2.5 px-3 text-xs text-white cursor-pointer md:py-2 md:px-5 md:text-base lg:text-lg"
+      className="block relative z-40 py-2.5 px-3 text-xs text-white cursor-pointer md:py-2 md:px-5 md:text-base lg:text-lg"
     >
       {children}
     </li>
