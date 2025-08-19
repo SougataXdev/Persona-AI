@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Persona AI favicon">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#007adf"/>
+      <stop offset="55%" stop-color="#9C40FF"/>
+      <stop offset="100%" stop-color="#00ecbc"/>
+    </linearGradient>
+    <linearGradient id="pStroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#dbeafe" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background rounded square -->
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="#0b0f17"/>
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#bg)" opacity="0.22"/>
+  <!-- Subtle inner ring -->
+  <circle cx="32" cy="32" r="22" fill="none" stroke="url(#bg)" stroke-width="2" opacity="0.35"/>
+  <!-- Stylized Letter P (single path for crispness) -->
+  <path filter="url(#glow)" fill="none" stroke="url(#pStroke)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M24 44V20h10.2c5.4 0 9.8 4.4 9.8 9.8S39.6 39.6 34.2 39.6H24"/>
+  <!-- Accent dot to imply AI spark -->
+  <circle cx="42" cy="22" r="3" fill="url(#bg)" />
+</svg>
