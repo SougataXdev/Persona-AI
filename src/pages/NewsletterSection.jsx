@@ -1,5 +1,3 @@
-import React from "react";
-
 import { ArrowRight } from "lucide-react";
 import Wrapper from "../components/global/Wapper";
 import { Button } from "../components/ui/Button";
@@ -11,7 +9,7 @@ import { Input } from "../components/ui/Input";
 
 export const NewsletterSection = () => {
   return (
-    <section id="newsletter" className="w-full sm:w-2/3 ">
+    <section id="contact" className="w-full sm:w-2/3 ">
       <Wrapper className="flex flex-col items-center justify-center relative">
         <Container>
           <LampContainer>

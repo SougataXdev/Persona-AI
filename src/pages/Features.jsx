@@ -1,8 +1,6 @@
-import React from "react";
-
 const Features = () => {
   return (
-    <div className="h-screen container">
+    <div id="features" className="h-screen container">
       <img src="" alt="" />
     </div>
   );

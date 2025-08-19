@@ -14,11 +14,11 @@ const Hero = () => {
   return (
     <Wrapper>
       {/* <div className=" absolute inset-0 dark:bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] -z-10 h-[150vh]" /> */}
-      <div className="absolute opacity-10 inset-0 dark:bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] -z-10 h-screen" />
+      <div id="home" className="absolute opacity-10 inset-0 dark:bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] -z-10 h-screen" />
       <Container>
         <div className=" flex flex-col items-center justify-center py-[180px] h-full">
           <button className="group relative grid overflow-hidden rounded-full shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] transition-colors duration-200 bg-gradient-to-tr from-primary/40">
-            <span className="h-full w-full blur-md absolute bottom-0 inset-x-0 bg-gradient-to-tr from-primary/40" />
+            <span className="absolute inset-x-0 bottom-0 w-full h-full blur-md bg-gradient-to-tr from-primary/40" />
             <AnimatedGradientText className="bg-neutral-950">
               ✨ <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
               <span
@@ -28,19 +28,19 @@ const Hero = () => {
               >
                 Speak Without Speaking
               </span>
-              <ChevronRight className="ml-2 w-4 h-4 text-white" />
+              <ChevronRight className="w-4 h-4 ml-2 text-white" />
             </AnimatedGradientText>
           </button>
-          <div className="flex flex-col items-center mt-14 max-w-4xl w-11/12 md:w-full">
+          <div className="flex flex-col items-center w-11/12 max-w-4xl mt-14 md:w-full">
             <TextGenerateEffect words={heroTitle} title={true} />
 
-            <p className="text-base tracking-tight font-poppins md:text-lg lg:text- text-background/70 mt-6 text-center">
+            <p className="mt-6 text-base tracking-tight text-center font-poppins md:text-lg lg:text- text-background/70">
               Let your digital twin handle interactions effortlessly, so you can
               stay focused on
               <br /> what truly matters.
             </p>
 
-            <div className=" md:flex relative items-center justify-center mt-8 md:mt-14 w-full">
+            <div className="relative items-center justify-center w-full mt-8 md:flex md:mt-14">
               <SignUpButtonC />
             </div>
           </div>
